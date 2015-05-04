@@ -1,0 +1,35 @@
+<div class="row">
+	<div class="columns large-10 small-10">Hi, {{ username }}</div>
+	<!-- <div class="columns large-2 small-2"><a ng-click="logout()">Logout</a></div> -->
+</div>
+<hr>
+<div class="row">
+	<div class="columns large-4 large-centered small-4 small-centered">
+		<h5>Select mode</h5>
+		<input type="radio" ng-model="mode" name="mode" value="2p" id="m2"><label for="m2">2 Players</label>
+		<input type="radio" ng-model="mode" name="mode" value="3p" id="m3"><label for="m3">3 Players</label>
+		<input type="radio" ng-model="mode" name="mode" value="4p" id="m4"><label for="m4">4 Players</label>
+		<input type="radio" ng-model="mode" name="mode" value="5p" id="m5"><label for="m5">5 Players</label>
+		<div class="row">
+			<div class="columns" large-12 small-12>
+				<h5>Enable bot (dummy)</h5>
+				<div class="switch radius">
+				  <input id="bot" ng-model="bot" type="checkbox">
+				  <label for="bot"></label>
+				</div>
+			</div>
+			<div class="columns" large-12 small-12>
+				<h5>Enable advanced rules (coming soon)</h5>
+				<div class="switch radius">
+				  <input id="advanced" ng-model="advanced" type="checkbox" disabled>
+				  <label for="advanced"></label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="columns large-3 large-centered small-6 small-centered" ng-show="!inSearching"><button class="radius" ng-click="find()">Search For Game</button></div>
+	<div class="columns large-3 large-centered small-6 small-centered" ng-show="inSearching"><button ng-click="cancel()">Cancel Search</button></div>
+</div>

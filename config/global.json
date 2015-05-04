@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.0"
+  },
+  "applications": {
+    "Turtle Race": {
+      "applicationId": "P5a1vIWWUg9q1xMXY8t9fh9knsz4G71lZvPvux9c",
+      "masterKey": "k70wMElkCISTrdGBKte4emoUVhY6HdUsqpvRDH5Q"
+    },
+    "_default": {
+      "link": "Turtle Race"
+    }
+  }
+}
